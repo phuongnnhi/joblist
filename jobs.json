@@ -1,4 +1,5 @@
-[
+{
+  "jobs": [
     {
       "id": "_cx62grqgd",
       "companyId": "_1js1rb41w",
@@ -202,4 +203,4 @@
       "description": "Tempora sit consequuntur deserunt velit et blanditiis a. Non harum quam quis commodi non minima ex. Ad adipisci exercitationem ipsa nemo rerum harum laboriosam quo. ",
       "skills": ["Lean", "Proactive Learner", "Postgresql", "Frontend"]
     }
-  ]
+  ]}

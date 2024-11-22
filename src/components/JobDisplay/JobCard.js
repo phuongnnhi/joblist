@@ -4,15 +4,17 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Chip, Divider, Stack } from '@mui/material';
+import { Chip, Stack } from '@mui/material';
 
-export default function JobCard({job}) {
+export default function JobCard({job, onClick}) {
   return (
     <Card sx={{ display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
       height: '100%', 
-      marginTop: 3}}>
+      marginTop: 3,
+      cursor: 'pointer'}}
+      onClick={() => onClick(job)}>
       <CardContent>
         <Typography variant="h6" component="div">
           {job.title}
@@ -28,15 +30,6 @@ export default function JobCard({job}) {
           <br />
           <br />
           {job.description}
-          <br />
-          <br />
-          <Divider/>
-          <br />
-          <b>Salary</b>: {job.salaryLow} - {job.salaryHigh}
-          <br />
-          <b>Years of Experience</b>: {job.yrsXPExpected}
-          <br />
-          <b>Remote</b>: {job.remote ? "Yes" : "No"}
         </Typography>
       </CardContent>
       <CardActions sx={{ marginBottom: 2 }}>
